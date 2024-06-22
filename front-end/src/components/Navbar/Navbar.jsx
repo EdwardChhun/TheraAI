@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import "./Navbar.css"
-import { menu, close } from "../../assets";
 
 const Navbar = ({ toggle, setToggle }) => {
     const [active, setActive] = useState("");
@@ -16,20 +15,20 @@ const Navbar = ({ toggle, setToggle }) => {
             <div className={`sidebar`}>
                 <nav>
                     <ul>
-                        <li className={active === 'TheraAI' ? 'active' : ''} onClick={() => handleLinkClick('TheraAI')} style={{ paddingLeft: '0px' }}>
-                        {/* <Link to="/inbox">Inbox</Link> */} TheraAI
+                        <li className={active === 'TheraAI' ? 'active' : ''} onClick={() => handleLinkClick('TheraAI')}>
+                            <Link to="/" className='nav-link'>TheraAI</Link>
                         </li>
                         <li className={active === 'Home' ? 'active' : ''} onClick={() => handleLinkClick('Home')}>
-                        {/* <Link to="/home">Home</Link> */} Home
+                            <Link to="/Home" className='nav-link'>Home</Link>
                         </li>
                         <li className={active === 'Dashboard' ? 'active' : ''} onClick={() => handleLinkClick('Dashboard')}>
-                        {/* <Link to="/projects">Projects</Link> */} Dashboard
+                        <Link to="/Dashboard" className='nav-link'>Dashboard</Link>
                         </li>
                         <li className={active === 'Account' ? 'active' : ''} onClick={() => handleLinkClick('Account')}>
-                        {/* <Link to="/inbox">Inbox</Link> */} Account
+                        <Link to="/Account" className='nav-link'>Account</Link>
                         </li>
                         <li className={active === 'About' ? 'active' : ''} onClick={() => handleLinkClick('About')}>
-                        {/* <Link to="/inbox">Inbox</Link> */} About
+                        <Link to="/About" className='nav-link'>About</Link>
                         </li>
                     </ul>
                 </nav>

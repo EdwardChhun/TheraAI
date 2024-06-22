@@ -1,23 +1,22 @@
-import React, { useRef } from 'react';
-import './App.css'
-
-import { Landing, Home } from "./components";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import { Landing, Home, Dashboard, Account, About } from './components'
 
 function App() {
-  const homeRef = useRef(null);
-
-  const scrollToHome = () => {
-    if (homeRef.current) {
-      homeRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
-    <>
-      {/* <Landing onLogoClick={scrollToHome} /> */}
-      <Home ref={homeRef} />
-    </>
-  )
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+          <Route path="/Account" element={<Account />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

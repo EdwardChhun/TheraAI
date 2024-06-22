@@ -5,7 +5,7 @@ import MicrophoneInput from '../MicrophoneInput/MicrophoneInput';
 
 import { camera, microphone } from '../../assets';
 
-const Home = React.forwardRef((props, ref) => {
+const Home = () => {
     const [toggle, setToggle] = useState(false);
     return (
       <div className="main-content">
@@ -20,6 +20,6 @@ const Home = React.forwardRef((props, ref) => {
         </div>
       </div>
     );
-});
+};
 
 export default Home

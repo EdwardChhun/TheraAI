@@ -11,6 +11,7 @@
     z-index: 999;
     padding-top: 30px;
     padding-left: 30px;
+    padding-right: 30px;
   }
 
   .sidebar nav ul {
@@ -27,5 +28,11 @@
   }
   
   .sidebar nav ul li:hover {
-    background-color: #575757;
+    background-color: #9b9b9b;
   }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
