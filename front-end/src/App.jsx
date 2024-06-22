@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       {/* <Landing onLogoClick={scrollToHome} /> */}
-      {/* <Home ref={homeRef} /> */}
+      { /*<Home ref={homeRef} />*/ }
       <About />
     </>
   )

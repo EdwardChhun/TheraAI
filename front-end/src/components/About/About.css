@@ -1,0 +1,53 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Inter, Inter;
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-section.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .about-text {
+    flex: 2;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  .about-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    font-size: 1.1em;
+  }
