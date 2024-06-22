@@ -6,6 +6,7 @@ import microphone from "./microphone.gif";
 import aboutImage1 from "./Image1.jpg"
 import aboutImage2 from "./Image2.jpeg"
 import aboutImage3 from "./Image3.jpeg"
+import LogoImage from "./TheraAILogo.png"
 
 export {
     logo,
@@ -15,6 +16,7 @@ export {
     microphone,
     aboutImage1,
     aboutImage2,
-    aboutImage3
+    aboutImage3,
+    LogoImage
 
 };

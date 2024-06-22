@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import "./Navbar.css"
-import { menu, close } from "../../assets";
+import { menu, close, LogoImage} from "../../assets";
 
 const Navbar = ({ toggle, setToggle }) => {
     const [active, setActive] = useState("");
@@ -16,9 +16,10 @@ const Navbar = ({ toggle, setToggle }) => {
             <div className={`sidebar`}>
                 <nav>
                     <ul>
-                        <li className={active === 'TheraAI' ? 'active' : ''} onClick={() => handleLinkClick('TheraAI')} style={{ paddingLeft: '0px' }}>
-                        {/* <Link to="/inbox">Inbox</Link> */} TheraAI
-                        </li>
+                    <li className={active === 'TheraAI' ? 'active' : ''} onClick={() => handleLinkClick('TheraAI')} style={{ paddingLeft: '0px' }}>
+                    <img src={LogoImage} alt="TheraAI Logo" style={{ marginRight: '5px', height: '20px' }} />
+                    TheraAI
+                    </li>
                         <li className={active === 'Home' ? 'active' : ''} onClick={() => handleLinkClick('Home')}>
                         {/* <Link to="/home">Home</Link> */} Home
                         </li>
