@@ -10,7 +10,7 @@ load_dotenv()
 HUME_API_KEY = os.getenv('HUME_API_KEY')
 
 samples = [
-    "I haven't heard back from my son for a few weeks, I also want to let him call me first, what should I do?"
+    "My mother just passed away from a fire, i couldn't say good bye to her due to my exam, I am feeling really sad and the sadness is crawling up to me..."
 ]
 
 async def main():

@@ -14,7 +14,7 @@ async def main() -> None:
 
     client = HumeVoiceClient(HUME_API_KEY)
     
-    async with client.connect() as socket:
+    async with client.connect(config_id="867d9570-4d01-4d85-aaa3-b81cbe3798ed") as socket:
         await MicrophoneInterface.start(socket)
         
 asyncio.run(main())        
