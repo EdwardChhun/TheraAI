@@ -1,0 +1,15 @@
+button {
+    padding: 10px 20px;
+    font-size: 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50; /* Default green color */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.listening {
+    background-color: red; /* Red color when listening */
+  }
+  

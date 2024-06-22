@@ -1,0 +1,35 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .icon-container {
+    margin-bottom: 60px;
+  }
+  
+  .icon {
+    width: 30vw;
+    height: auto;
+  }
+  
+  .microphone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .microphone-gif {
+    width: 40vw;
+    height: 150px;
+  }
+  
+  .microphone-container p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
