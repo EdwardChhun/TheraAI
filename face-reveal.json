@@ -1,0 +1,212 @@
+{
+    "face": {
+        "predictions": [
+            {
+                "frame": 0,
+                "time": null,
+                "bbox": {
+                    "x": 36.89720153808594,
+                    "y": 48.11697006225586,
+                    "w": 247.1879119873047,
+                    "h": 343.15158462524414
+                },
+                "prob": 0.9992855191230774,
+                "face_id": "face_0",
+                "emotions": [
+                    {
+                        "name": "Admiration",
+                        "score": 0.15574410557746887
+                    },
+                    {
+                        "name": "Adoration",
+                        "score": 0.17176152765750885
+                    },
+                    {
+                        "name": "Aesthetic Appreciation",
+                        "score": 0.06686139851808548
+                    },
+                    {
+                        "name": "Amusement",
+                        "score": 0.9290017485618591
+                    },
+                    {
+                        "name": "Anger",
+                        "score": 0.023888202384114265
+                    },
+                    {
+                        "name": "Anxiety",
+                        "score": 0.03977449610829353
+                    },
+                    {
+                        "name": "Awe",
+                        "score": 0.09798789024353027
+                    },
+                    {
+                        "name": "Awkwardness",
+                        "score": 0.12288675457239151
+                    },
+                    {
+                        "name": "Boredom",
+                        "score": 0.05076747015118599
+                    },
+                    {
+                        "name": "Calmness",
+                        "score": 0.1533471941947937
+                    },
+                    {
+                        "name": "Concentration",
+                        "score": 0.07922782748937607
+                    },
+                    {
+                        "name": "Contemplation",
+                        "score": 0.0356832779943943
+                    },
+                    {
+                        "name": "Confusion",
+                        "score": 0.06360819190740585
+                    },
+                    {
+                        "name": "Contempt",
+                        "score": 0.04668392613530159
+                    },
+                    {
+                        "name": "Contentment",
+                        "score": 0.25065866112709045
+                    },
+                    {
+                        "name": "Craving",
+                        "score": 0.033225905150175095
+                    },
+                    {
+                        "name": "Determination",
+                        "score": 0.04578329995274544
+                    },
+                    {
+                        "name": "Disappointment",
+                        "score": 0.04316006228327751
+                    },
+                    {
+                        "name": "Disgust",
+                        "score": 0.022454945370554924
+                    },
+                    {
+                        "name": "Distress",
+                        "score": 0.05089426785707474
+                    },
+                    {
+                        "name": "Doubt",
+                        "score": 0.04168998822569847
+                    },
+                    {
+                        "name": "Ecstasy",
+                        "score": 0.3241389989852905
+                    },
+                    {
+                        "name": "Embarrassment",
+                        "score": 0.0477791428565979
+                    },
+                    {
+                        "name": "Empathic Pain",
+                        "score": 0.025538058951497078
+                    },
+                    {
+                        "name": "Entrancement",
+                        "score": 0.07762256264686584
+                    },
+                    {
+                        "name": "Envy",
+                        "score": 0.018632426857948303
+                    },
+                    {
+                        "name": "Excitement",
+                        "score": 0.7022400498390198
+                    },
+                    {
+                        "name": "Fear",
+                        "score": 0.039062488824129105
+                    },
+                    {
+                        "name": "Guilt",
+                        "score": 0.015681572258472443
+                    },
+                    {
+                        "name": "Horror",
+                        "score": 0.029757287353277206
+                    },
+                    {
+                        "name": "Interest",
+                        "score": 0.309798002243042
+                    },
+                    {
+                        "name": "Joy",
+                        "score": 0.9217045903205872
+                    },
+                    {
+                        "name": "Love",
+                        "score": 0.33859407901763916
+                    },
+                    {
+                        "name": "Nostalgia",
+                        "score": 0.05770871043205261
+                    },
+                    {
+                        "name": "Pain",
+                        "score": 0.047724053263664246
+                    },
+                    {
+                        "name": "Pride",
+                        "score": 0.16025586426258087
+                    },
+                    {
+                        "name": "Realization",
+                        "score": 0.08900194615125656
+                    },
+                    {
+                        "name": "Relief",
+                        "score": 0.1381649672985077
+                    },
+                    {
+                        "name": "Romance",
+                        "score": 0.05348990857601166
+                    },
+                    {
+                        "name": "Sadness",
+                        "score": 0.02865028753876686
+                    },
+                    {
+                        "name": "Satisfaction",
+                        "score": 0.4409671425819397
+                    },
+                    {
+                        "name": "Desire",
+                        "score": 0.04755127802491188
+                    },
+                    {
+                        "name": "Shame",
+                        "score": 0.017576254904270172
+                    },
+                    {
+                        "name": "Surprise (negative)",
+                        "score": 0.026714075356721878
+                    },
+                    {
+                        "name": "Surprise (positive)",
+                        "score": 0.06422260403633118
+                    },
+                    {
+                        "name": "Sympathy",
+                        "score": 0.047334082424640656
+                    },
+                    {
+                        "name": "Tiredness",
+                        "score": 0.04985680803656578
+                    },
+                    {
+                        "name": "Triumph",
+                        "score": 0.1908828318119049
+                    }
+                ]
+            }
+        ]
+    }
+}

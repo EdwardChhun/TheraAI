@@ -3,6 +3,9 @@ import os
 import asyncio
 import json
 
+# Using the camera
+import cv2 
+
 from hume import HumeStreamClient, StreamSocket
 from hume.models.config import FaceConfig
 
@@ -15,7 +18,7 @@ async def main():
     client = HumeStreamClient(HUME_API_KEY)
     config = FaceConfig(identify_faces=True)
     async with client.connect([config]) as socket:
-        result = await socket.send_file("images/noob_blading.jpg")
+        result = await socket.send_file("images/noop_bald.png")
         
     with open("face-reveal.json", 'w') as file:
         json.dump(result, file, indent=4)
