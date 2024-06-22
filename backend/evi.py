@@ -3,6 +3,9 @@ from hume import HumeVoiceClient, MicrophoneInterface
 from dotenv import load_dotenv
 import asyncio
 
+# Refer to https://beta.hume.ai/evi/playground?configId=867d9570-4d01-4d85-aaa3-b81cbe3798ed
+# for configuration
+
 async def main() -> None:
     
     load_dotenv()
