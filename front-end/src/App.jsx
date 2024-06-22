@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './App.css'
 
-import { Landing, Home } from "./components";
+import { Landing, Home, About } from "./components";
 
 function App() {
   const homeRef = useRef(null);
@@ -15,7 +15,8 @@ function App() {
   return (
     <>
       {/* <Landing onLogoClick={scrollToHome} /> */}
-      <Home ref={homeRef} />
+      {/* <Home ref={homeRef} /> */}
+      <About />
     </>
   )
 }
