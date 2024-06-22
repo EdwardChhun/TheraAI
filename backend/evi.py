@@ -13,4 +13,5 @@ async def main() -> None:
     
     async with client.connect() as socket:
         await MicrophoneInterface.start(socket)
+        
 asyncio.run(main())        

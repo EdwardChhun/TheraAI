@@ -10,10 +10,7 @@ load_dotenv()
 HUME_API_KEY = os.getenv('HUME_API_KEY')
 
 samples = [
-    "MY GIRLFRIEND KILLED MY HIGHSCHOOL TEACHER,",
-    "I love Jamiel Asher Alaska NoopNoooop."
-    "My friend kiripech just got an award for big muscle, I so proud,"
-    "Jamiel Asher become number one chemistry."
+    "I haven't heard back from my son for a few weeks, I also want to let him call me first, what should I do?"
 ]
 
 async def main():
