@@ -1,0 +1,17 @@
+python-dotenv
+hume[stream]
+hume[microphone]
+opencv-python
+streamlit
+
+# Voice Recognition
+speechrecognition
+pyaudio
+
+#run this before below if error
+#! pip install --upgrade setuptools
+#! pip install distutils
+
+# For some reason if there is an ffmpeg error (windows), include:
+# pip install ffmpeg
+# refer to https://dev.hume.ai/docs/empathic-voice-interface-evi/quickstart/python
