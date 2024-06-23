@@ -8,7 +8,7 @@ import os
 import asyncio
 import json
 
-from hume import HumeStreamClient, StreamSocket
+from hume import HumeStreamClient
 from hume.models.config import FaceConfig
 
 load_dotenv()
