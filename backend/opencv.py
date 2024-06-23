@@ -33,7 +33,7 @@ while True:
         cv2.putText(frame, 'Largest Face', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
 
     # This just flips the frame
-    frame = cv2.flip(frame, 1)
+    # frame = cv2.flip(frame, 1)
 
     cv2.imshow("Faces", frame)
     if cv2.waitKey(1) == ord("q"):

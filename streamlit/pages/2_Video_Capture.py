@@ -16,7 +16,6 @@ load_dotenv()
 HUME_API_KEY = os.getenv("HUME_API_KEY")
 
 
-
 async def face_eval():
     client = HumeStreamClient(HUME_API_KEY)
     config = FaceConfig(identify_faces=True)
@@ -48,7 +47,7 @@ def start_webcam():
     cap = cv2.VideoCapture(0)
 
     fps = int(cap.get(cv2.CAP_PROP_FPS))
-    save_interval = fps * 2.5
+    save_interval = fps * 5
 
     frame_count = 0
     time = 0
@@ -103,8 +102,8 @@ def start_webcam():
 
         if frame_count == save_interval:
             img = f'img.jpg'
-            cv2.imwrite(img, frame)
             asyncio.run(face_eval())
+            cv2.imwrite(img, frame)
             # send to flask
 
             frame_count = 0
@@ -114,7 +113,7 @@ def start_webcam():
     cap.release()
 
 # Set up the Streamlit app
-st.title("Live Webcam + Microphone Feed")
+st.title("SMILE 📸")
 st.write("Talk to our AI Therapist that evaluates your facial and vocal expression")
 
 # Initialize session state for the stop button
@@ -124,8 +123,8 @@ if 'stop_camera' not in st.session_state:
 # Button to start the webcam feed
 if st.button("Start Chatting", key="start_button"):
     st.session_state['stop_camera'] = False  # Reset the stop state
-    asyncio.run(face_eval())
     start_webcam()
+    asyncio.run(face_eval())
 
 # INCLUDE HEREEE!!!!
 # ------------------

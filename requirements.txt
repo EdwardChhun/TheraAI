@@ -7,6 +7,7 @@ Flask
 numpy
 pandas
 matplotlib
+hugchat==0.0.8
 
 
 # Voice Recognition
