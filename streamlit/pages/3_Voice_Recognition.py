@@ -89,9 +89,13 @@ async def user_input_handler(socket: VoiceSocket):
 
 # Asynchronous main function to set up and run the client
 async def main():
+    
+    config_id = "867d9570-4d01-4d85-aaa3-b81cbe3798ed" # Config for Eldery Therapist
+     
     try:
         client = HumeVoiceClient(HUME_API_KEY, HUME_SECRET_KEY)
         async with client.connect_with_handlers(
+            config_id=config_id,
             on_open=on_open,
             on_message=on_message,
             on_error=on_error,
