@@ -22,16 +22,3 @@
     margin-right: 10px;
   }
   
-  .popup-content button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .popup-content button:hover {
-    background-color: #45a049;
-  }
-  
