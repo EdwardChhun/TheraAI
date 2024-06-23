@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import "./Navbar.css"
-import { LogoImage } from "../../assets";
+import { navLogo, home, dashboard, account, about, team } from "../../assets";
 
 const Navbar = ({ toggle, setToggle }) => {
     const [active, setActive] = useState("");
@@ -30,23 +30,41 @@ const Navbar = ({ toggle, setToggle }) => {
             <div className={`sidebar`}>
                     <li className={active === 'TheraAI' ? 'active' : ''} onClick={() => handleLinkClick('TheraAI')} style={{ paddingLeft: '0px' }}>
                         <Link to="/" className='nav-link-logo'>
-                            <img src={LogoImage} alt="TheraAI Logo" style={{ marginRight: '1px', height: '1em', }} />
+                            <img src={navLogo} alt="TheraAI Logo" style={{ marginRight: '1px', height: '1em', }} />
                             TheraAI
                         </Link>
                     </li>
                 <nav>
                     <ul className='nav-list'>
                         <li className={active === 'Home' ? 'active' : ''} onClick={() => handleLinkClick('Home')}>
-                            <Link to="/Home" className='nav-link'>Home</Link>
+                            <Link to="/Home" className='nav-link'>
+                                <img className='nav-link-icons' src={home} alt='Home'/>
+                                Home
+                            </Link>
                         </li>
                         <li className={active === 'Dashboard' ? 'active' : ''} onClick={() => handleLinkClick('Dashboard')}>
-                            <Link to="/Dashboard" className='nav-link'>Dashboard</Link>
+                            <Link to="/Dashboard" className='nav-link'>
+                                <img className='nav-link-icons' src={dashboard} alt='Dashboard'/>
+                                Dashboard
+                            </Link>
                         </li>
                         <li className={active === 'Account' ? 'active' : ''} onClick={() => handleLinkClick('Account')}>
-                            <Link to="/Account" className='nav-link'>Account</Link>
+                            <Link to="/Account" className='nav-link'>
+                                <img className='nav-link-icons' src={account} alt='Account'/>
+                                Account
+                            </Link>
                         </li>
                         <li className={active === 'About' ? 'active' : ''} onClick={() => handleLinkClick('About')}>
-                            <Link to="/About" className='nav-link'>About</Link>
+                            <Link to="/About" className='nav-link'>
+                                <img className='nav-link-icons' src={about} alt='About'/>
+                                About
+                            </Link>
+                        </li>
+                        <li className={active === 'Team' ? 'active' : ''} onClick={() => handleLinkClick('Team')}>
+                            <Link to="/Team" className='nav-link'>
+                                <img className='nav-link-icons' src={team} alt='Team'/>
+                                <span className='nav-link-directory'> Team </span>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

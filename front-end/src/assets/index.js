@@ -3,10 +3,15 @@ import menu from "./Menu.svg";
 import close from "./close.svg";
 import camera from "./camera.svg";
 import microphone from "./microphone.gif";
-import aboutImage1 from "./Image1.jpg"
-import aboutImage2 from "./Image2.jpeg"
-import aboutImage3 from "./Image3.jpeg"
-import LogoImage from "./TheraAILogo.png"
+import reason from "./Image1.jpg";
+import goal from "./Image2.jpeg";
+import vision from "./Image3.jpeg";
+import navLogo from "./TheraAILogo.png";
+import home from "./home.png";
+import dashboard from "./dashboard.png";
+import account from "./account.png";
+import about from "./about.png";
+import team from "./team.png";
 
 export {
     logo,
@@ -14,9 +19,13 @@ export {
     close,
     camera,
     microphone,
-    aboutImage1,
-    aboutImage2,
-    aboutImage3,
-    LogoImage
-
+    reason,
+    goal,
+    vision,
+    navLogo,
+    home,
+    dashboard,
+    account,
+    about,
+    team,
 };
