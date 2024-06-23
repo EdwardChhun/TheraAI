@@ -3,6 +3,7 @@ python-dotenv
 "hume[microphone]"
 opencv-python
 streamlit
+streamlit-option-menu
 
 # Voice Recognition
 speechrecognition
