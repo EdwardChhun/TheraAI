@@ -1,7 +1,8 @@
 /* src/components/TeamMember.css */
 .team-member {
     text-align: center;
-    margin: 50px;
+    margin: 30px;
+    font-size: large;
   }
   
   .profile-pic {
@@ -12,16 +13,19 @@
   
   .team-member h3 {
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 2em;
+    margin-bottom: 0.5em;
   }
   
   .team-member p {
+    font-size: x-large;
     margin: 5px 0;
   }
   
   .team-member a {
     color: #0066cc;
     text-decoration: none;
+    font-size: 1.3em;
   }
   
   .team-member a:hover {
