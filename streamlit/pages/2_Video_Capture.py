@@ -48,7 +48,7 @@ def start_webcam():
     cap = cv2.VideoCapture(0)
 
     fps = int(cap.get(cv2.CAP_PROP_FPS))
-    save_interval = fps * 5
+    save_interval = fps * 2.5
 
     frame_count = 0
     time = 0
