@@ -48,6 +48,9 @@ const Navbar = ({ toggle, setToggle }) => {
                         <li className={active === 'About' ? 'active' : ''} onClick={() => handleLinkClick('About')}>
                             <Link to="/About" className='nav-link'>About</Link>
                         </li>
+                        <li className={active === 'Team' ? 'active' : ''} onClick={() => handleLinkClick('Team')}>
+                            <Link to="/Team" className='nav-link'>Team</Link>
+                        </li>
                     </ul>
                 </nav>
                 <div className="user-info">

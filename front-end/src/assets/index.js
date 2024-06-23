@@ -7,6 +7,10 @@ import aboutImage1 from "./Image1.jpg"
 import aboutImage2 from "./Image2.jpeg"
 import aboutImage3 from "./Image3.jpeg"
 import LogoImage from "./TheraAILogo.png"
+import edwardImage from "./edwardImage.jpeg";
+import clementImage from "./clementImage.jpeg";
+import billImage from "./billImage.jpeg";
+import nikhilImage from "./nikhilImage.jpg";
 
 export {
     logo,
@@ -17,6 +21,10 @@ export {
     aboutImage1,
     aboutImage2,
     aboutImage3,
-    LogoImage
+    LogoImage,
+    edwardImage,
+    clementImage,
+    billImage,
+    nikhilImage
 
 };
