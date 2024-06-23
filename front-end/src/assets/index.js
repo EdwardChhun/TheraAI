@@ -13,6 +13,10 @@ import account from "./account.png";
 import about from "./about.png";
 import team from "./team.png";
 import user from "./user.png";
+import nickqr from "./nickqr.webp";
+import clementqr from "./clementqr.webp";
+import billqr from "./billqr.webp";
+import edwardqr from "./edwardqr.webp";
 
 export {
     logo,
@@ -30,4 +34,8 @@ export {
     about,
     team,
     user,
+    nickqr,
+    clementqr,
+    billqr,
+    edwardqr,
 };

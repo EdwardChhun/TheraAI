@@ -7,6 +7,7 @@ import edwardImage from "../../assets/edwardImage.jpeg";
 import clementImage from "../../assets/clementImage.jpeg";
 import billImage from "../../assets/billImage.jpeg";
 import nikhilImage from "../../assets/nikhilImage.jpg";
+import { nickqr, clementqr, billqr, edwardqr } from '../../assets';
 
 const Team = () => {
     const [toggle, setToggle] = useState(false);
@@ -44,6 +45,12 @@ const Team = () => {
             linkedin="https://linkedin.com/in/nikhil-ankam"
             image={nikhilImage}
           />
+        </div>
+        <div className="qr-codes">
+          <img className="qr-code" src={edwardqr} alt='Edward' />
+          <img className="qr-code" src={clementqr} alt='Clement' />
+          <img className="qr-code" src={billqr} alt='Bill' />
+          <img className="qr-code" src={nickqr} alt='Nick' />
         </div>
       </div>
     </div>
