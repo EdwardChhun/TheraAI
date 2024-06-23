@@ -66,6 +66,9 @@ const Navbar = ({ toggle, setToggle }) => {
                                 <span className='nav-link-directory'> Team </span>
                             </Link>
                         </li>
+                        <li className={active === 'Team' ? 'active' : ''} onClick={() => handleLinkClick('Team')}>
+                            <Link to="/Team" className='nav-link'>Team</Link>
+                        </li>
                     </ul>
                 </nav>
                 <div className="user-info">

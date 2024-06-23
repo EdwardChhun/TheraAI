@@ -4,6 +4,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import Account from "./Account/Account"
 import About from "./About/About";
 import PopupMessage from "./PopupMessage/PopupMessage";
+import Team from "./Team/Team";
 
 export {
     Landing,
@@ -12,4 +13,5 @@ export {
     Account,
     About,
     PopupMessage,
+    Team,
 };
