@@ -1,20 +1,18 @@
 .account-container {
-    max-width: 600px;
+    max-width: 50vw;
     margin: 0 auto;
     padding: 20px;
+    padding-left: 20em;
+  }
+
+  .account-container h1 {
+    font-size: 3em;
   }
   
   .profile-section {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .profile-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
   }
   
   .profile-info h2 {
@@ -29,6 +27,7 @@
   .account-form label {
     display: block;
     margin-bottom: 10px;
+    font-size: 1.8em;
   }
   
   .account-form input {

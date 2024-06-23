@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import './Account.css';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
-import PopupMessage from '../PopupMessage/PopupMessage';
 
 const Account = () => {
   const navigate = useNavigate();
-  const [showPopup, setShowPopup] = useState(false);
 
   const handleSignUpClick = (e) => {
     e.preventDefault();

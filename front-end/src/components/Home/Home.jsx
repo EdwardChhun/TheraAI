@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Home.css";
+
 import Navbar from '../Navbar/Navbar';
 
 
@@ -16,7 +17,6 @@ const Home = () => {
         <div className="microphone-container">
           
           <h1>Share your thoughts...</h1>
-          <MicrophoneInput />
         </div>
       </div>
     );
