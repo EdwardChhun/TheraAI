@@ -3,18 +3,42 @@ import cv2
 import pathlib
 import numpy as np
 
-import pandas as pd
-import altair as alt
-import numpy as np
+from dotenv import load_dotenv
+import os
+import asyncio
 import json
-import matplotlib.pyplot as plt
 
-# st.set_page_config(
-#     page_title="Emotion Trend",
-#     page_icon="📊",
-#     layout="wide",
-#     initial_sidebar_state="expanded")
-# Function to start the webcam and display the feed in Streamlit
+from hume import HumeStreamClient, StreamSocket
+from hume.models.config import FaceConfig
+
+
+load_dotenv()
+
+HUME_API_KEY = os.getenv("HUME_API_KEY")
+
+
+async def face_eval():
+    client = HumeStreamClient(HUME_API_KEY)
+    config = FaceConfig(identify_faces=True)
+
+
+    async with client.connect([config]) as socket:
+        result = await socket.send_file("img.jpg")
+        
+    with open("face-reveal.json", 'w') as file:
+        json.dump(result, file, indent=4)
+        
+    with open("face-reveal.json", 'r') as file:
+        data = json.load(file)
+        
+    emotions = data["face"]["predictions"][0]["emotions"]
+    highest_emotion = max(emotions, key=lambda e: e["score"])
+    # print("\n")
+    # print(f"The highest emotion score is {highest_emotion['score']} for the emotion: {highest_emotion['name']}")
+
+    with open("largest-face.json", 'w') as file:
+        json.dump(highest_emotion, file)
+
 def start_webcam():
     cascade_path = pathlib.Path(cv2.__file__).parent.absolute() / "data/haarcascade_frontalface_default.xml"
     clf = cv2.CascadeClassifier(str(cascade_path))
@@ -57,10 +81,16 @@ def start_webcam():
         if len(faces) > 0:
             largest_face = max(faces, key=lambda rect: rect[2] * rect[3])
 
+            with open('largest-face.json') as data:
+                d = json.load(data)
+                emotion = d['name']
+
             # Draw rectangle around the largest face
             (x, y, w, h) = largest_face
             cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
-            cv2.putText(frame, 'Largest Face', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
+            cv2.putText(frame, emotion, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)\
+            
+            
 
         # This just flips the frame
         # frame = cv2.flip(frame, 1)
@@ -74,6 +104,7 @@ def start_webcam():
         if frame_count == save_interval:
             img = f'img.jpg'
             cv2.imwrite(img, frame)
+            asyncio.run(face_eval())
             # send to flask
 
             frame_count = 0
@@ -94,16 +125,23 @@ if 'stop_camera' not in st.session_state:
 NOTE: Include col for start and end
 """
 col1, col2 = st.columns(2)
+
     
 # Button to start the webcam feed
 if st.button("Start Webcam", key="start_button"):
     st.session_state['stop_camera'] = False  # Reset the stop state
+    asyncio.run(face_eval())
     start_webcam()
+
     
 if st.button("End Webcame", key="end_button"):
     st.session_state['stop_camera'] = True  # Reset the stop state
     start_webcam()
     
+
+
+
+
 
 
 """ 
@@ -112,19 +150,3 @@ NOTE: Below is the voice recognition with animation, with responses
 
 # INCLUDE HEREEE!!!!
 # ------------------
-
-""" 
-NOTE: Below is the dash board
-"""
-
-
-alt.themes.enable("dark")
-
-st.title('Emotion over time (s)')
-
-df = pd.read_csv('./data/emotion_over_time.csv')
-df.insert(3, "Time", np.arange(0, 60, 60/24), True)
-
-st.line_chart(df, x='Time',y='Score',color='Emotion')
-
-st.button("Re-run")
