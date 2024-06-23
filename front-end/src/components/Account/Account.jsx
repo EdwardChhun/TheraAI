@@ -10,7 +10,9 @@ const Account = () => {
 
   const handleSignUpClick = (e) => {
     e.preventDefault();
-    setShowPopup(true);
+    alert("Thank you for signing up!");
+    console.log(JSON.stringify(formData));
+    localStorage.setItem('userData', JSON.stringify(formData));
   };
 
   const handleGuestClick = () => {
@@ -20,6 +22,7 @@ const Account = () => {
   const [toggle, setToggle] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
+    email: '',
     phoneNumber: '',
     emergencyContactFullName: '',
     emergencyContactPhoneNumber: '',
@@ -38,7 +41,6 @@ const Account = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(JSON.stringify(formData));
   };
 
   return (
@@ -52,6 +54,15 @@ const Account = () => {
             type="text"
             name="fullName"
             value={formData.fullName}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Email
+          <input
+            type="text"
+            name="email"
+            value={formData.email}
             onChange={handleChange}
           />
         </label>
@@ -116,7 +127,6 @@ const Account = () => {
             placeholder="Address"
           />
         </label>
-        {showPopup && <PopupMessage message="Thank you for signing up!" onClose={() => setShowPopup(false)} />}
         <button className="sign-up-button" type="submit" onClick={handleSignUpClick}>Sign Up</button>
         <button className="guest-account-button" onClick={handleGuestClick}>Guest Account</button>
       </form>
