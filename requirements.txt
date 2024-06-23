@@ -6,11 +6,6 @@ flask-cors
 Flask
 
 # Voice Recognition
-speechrecognition
-pyaudio
-mediapipe
-pydub
-plotly
 
 
 #run this before below if error
