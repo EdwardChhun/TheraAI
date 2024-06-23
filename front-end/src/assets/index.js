@@ -12,6 +12,7 @@ import dashboard from "./dashboard.png";
 import account from "./account.png";
 import about from "./about.png";
 import team from "./team.png";
+import user from "./user.png";
 
 export {
     logo,
@@ -28,4 +29,5 @@ export {
     account,
     about,
     team,
+    user,
 };
