@@ -12,6 +12,7 @@
     padding-left: 30px;
     padding-right: 30px;
     list-style-type: none;
+    font-family: Inter;
   }
 
   .nav-list {
@@ -24,7 +25,8 @@
   }
   
   .sidebar nav ul li {
-    padding: 10px 20px;
+    padding: 30px 20px;
+    padding-bottom: 50px;
   }
   
   .sidebar nav ul li a {
@@ -33,6 +35,10 @@
   
   .sidebar nav ul li:hover {
     background-color: #9b9b9b;
+    /*padding-inline: 10px;*/
+    width: 120px;
+    height: 10px;
+    border-radius: 20px;
   }
 
   .nav-link {

@@ -19,8 +19,8 @@ const About = () => {
             <img src={elderlyWomanImage} alt="Elderly Woman" />
             </div>
             <div className="about-text">
-            <h3>Our Goal?</h3>
-            <p>To enhance the emotional well-being of elderly individuals through empathetic AI interactions and continuous emotional monitoring, ensuring support, companionship, and safety.</p>
+            <h3>Why TheraAI?</h3>
+            <p>Studies show that around 17% of elderly individuals experience depression due to loneliness (source: CDC). TheraAI aims to bridge this gap by providing consistent emotional support and companionship through innovative AI technologies.</p>
             </div>
         </div>
         <div className="about-section reverse">
@@ -28,8 +28,8 @@ const About = () => {
             <img src={doctorImage} alt="Doctor" />
             </div>
             <div className="about-text">
-            <h3>Our Vision?</h3>
-            <p>To harness AI to enhance the emotional well-being of elderly individuals through empathetic interactions and advanced technologies. We aim to develop TheraAI into a widely accessible product, providing compassionate support and monitoring to elderly users everywhere.</p>
+            <h3>Our Goal?</h3>
+            <p>To enhance the emotional well-being of elderly individuals through empathetic AI interactions and continuous emotional monitoring, ensuring support, companionship, and safety.</p>
             </div>
         </div>
         <div className="about-section">

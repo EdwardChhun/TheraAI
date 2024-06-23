@@ -1,5 +1,5 @@
 .about-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     font-family: Inter, Inter;
@@ -7,12 +7,12 @@
   }
   
   .about-container h1 {
-    font-size: 2em;
+    font-size: 4em;
     margin-bottom: 20px;
   }
   
   .about-container p {
-    font-size: 1.2em;
+    font-size: 1.7em;
     margin-bottom: 20px;
   }
   
@@ -33,7 +33,7 @@
   
   .about-image img {
     border-radius: 50%;
-    width: 150px;
+    width: 200px;
     height: 150px;
   }
   
@@ -44,10 +44,10 @@
   }
   
   .about-text h3 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 10px;
   }
   
   .about-text p {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
