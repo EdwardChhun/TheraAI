@@ -1,6 +1,5 @@
 python-dotenv
-"hume[stream]"
-"hume[microphone]"
+hume
 opencv-python
 streamlit
 flask-cors
