@@ -17,12 +17,10 @@ async def main():
     client = HumeStreamClient(HUME_API_KEY)
     config = FaceConfig(identify_faces=True)
     async with client.connect([config]) as socket:
-        result = await socket.send_file("images/noop_bald.png")
+        result = await socket.send_file("..\\streamlit\\img.jpg")
         
     with open("face-reveal.json", 'w') as file:
         json.dump(result, file, indent=4)
-        
-    print(result)
         
     with open("face-reveal.json", 'r') as file:
         data = json.load(file)
@@ -32,6 +30,8 @@ async def main():
     print("\n")
     print(f"The highest emotion score is {highest_emotion['score']} for the emotion: {highest_emotion['name']}")
 
+    with open("..\\streamlit\\largest-face.json", 'w') as file:
+        json.dump(highest_emotion, file)
 
 
 asyncio.run(main())
