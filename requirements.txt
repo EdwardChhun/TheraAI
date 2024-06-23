@@ -4,6 +4,10 @@ opencv-python
 streamlit
 flask-cors
 Flask
+numpy
+pandas
+matplotlib
+
 
 # Voice Recognition
 
