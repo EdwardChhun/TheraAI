@@ -13,9 +13,6 @@ const Navbar = ({ toggle, setToggle }) => {
         try {
             const response = await axios.get('http://127.0.0.1:5000/upload-contact');
             console.log("GET Response: ", response.data);
-            if (response.data) {
-                setUserData(response.data);
-            }
 
         } catch (error) {
             console.log("Error with GET request: ", error);
@@ -24,7 +21,11 @@ const Navbar = ({ toggle, setToggle }) => {
 
     useEffect(() => {
         fetchData();
-    }, []);
+        const data = localStorage.getItem('userData');
+        if (data) {
+          setUserData(JSON.parse(data));
+        }
+      }, []);
 
     const handleLinkClick = (Link) => {
       setActive(Link);
@@ -55,16 +56,16 @@ const Navbar = ({ toggle, setToggle }) => {
                 <nav>
                     <ul className='nav-list'>
                         <li className={active === 'Home' ? 'active' : ''} onClick={() => handleLinkClick('Home')}>
-                            <Link to="/Home" className='nav-link'>
+                            <a href='http://localhost:8501/' className='nav-link'>
                                 <img className='nav-link-icons' src={home} alt='Home'/>
                                 <span>Home</span>
-                            </Link>
+                            </a>
                         </li>
                         <li className={active === 'Dashboard' ? 'active' : ''} onClick={() => handleLinkClick('Dashboard')}>
-                            <Link to="/Dashboard" className='nav-link'>
+                            <a href='http://localhost:8501/Dashboard' className='nav-link'>
                                 <img className='nav-link-icons' src={dashboard} alt='Dashboard'/>
                                 Dashboard
-                            </Link>
+                            </a>
                         </li>
                         <li className={active === 'Account' ? 'active' : ''} onClick={() => handleLinkClick('Account')}>
                             <Link to="/Account" className='nav-link'>

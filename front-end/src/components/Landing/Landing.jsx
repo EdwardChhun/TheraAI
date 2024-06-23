@@ -7,11 +7,11 @@ const Landing = () => {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    navigate('/Account');
+    navigate('/About');
   };
 
   const handleKeyDown = (event) => {
-    navigate('/Account');
+    navigate('/About');
   };
 
   useEffect(() => {

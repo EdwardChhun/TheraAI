@@ -10,7 +10,7 @@
   
   .about-container h1 {
     font-size: 4em;
-    margin-bottom: 20px;
+    padding-bottom: 0.5em;
   }
   
   .about-container p {
@@ -34,8 +34,8 @@
   }
   
   .about-image img {
-    border-radius: 50%;
-    width: 300px;
+    border-radius: 30%;
+    width: 250px;
     height: 10vp;
   }
   
@@ -44,7 +44,7 @@
     flex: 2;
     text-align: left;
     padding: 0 20px;
-    max-width: 30vw;
+    max-width: 35vw;
   }
   
   .about-text h3 {

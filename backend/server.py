@@ -20,16 +20,5 @@ def upload_contact():
 
     return jsonify(data)
 
-@app.route('/delete-contact', methods=['DELETE'])
-def delete_contact():
-    data = request.get_json()
-    
-    if 'fullName' in data:
-        del data['fullName']
-    if 'email' in data:
-        del data['email']
-    
-    return jsonify(data), 200
-
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
