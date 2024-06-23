@@ -16,7 +16,7 @@
   }
 
   .nav-list {
-    margin-top: 350px;
+    margin-top: 50%;
   }
 
   .sidebar nav ul {
@@ -36,8 +36,8 @@
   .sidebar nav ul li:hover {
     background-color: #9b9b9b;
     /*padding-inline: 10px;*/
-    width: 120px;
-    height: 10px;
+    /* width: 120px;
+    height: 10px; */
     border-radius: 20px;
   }
 
