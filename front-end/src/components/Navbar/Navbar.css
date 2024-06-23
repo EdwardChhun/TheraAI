@@ -7,10 +7,15 @@
     background-color: #25B9C0;
     color: white;
     font-size: x-large ;
-    transition: left 0.3s ease-in-out;
     z-index: 999;
     padding-top: 30px;
     padding-left: 30px;
+    padding-right: 30px;
+    list-style-type: none;
+  }
+
+  .nav-list {
+    margin-top: 250px;
   }
 
   .sidebar nav ul {
@@ -27,5 +32,40 @@
   }
   
   .sidebar nav ul li:hover {
-    background-color: #575757;
+    background-color: #9b9b9b;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .user-info {
+    position: fixed;
+    bottom: 0;
+    background-color: #84D9DF;
+    color: black;
+    font-size: medium;
+    width: 230px;
+    height: 130px;
+    left: 0px;
+  }
+
+  .user-info p {
+    padding-left: 20px;
+  }
+
+  .logout-button {
+    background-color: #f44336; /* Red background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Full width button */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
   }
