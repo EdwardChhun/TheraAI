@@ -157,7 +157,7 @@ async def user_input_handler(socket: VoiceSocket):
 # ================================================
 
 # Asynchronous main function to set up and run the client
-async def main() -> None:
+async def run() -> None:
     try:
         # Retrieve any environment variables stored in the .env file
         load_dotenv()
@@ -200,4 +200,4 @@ async def main() -> None:
 # ================================================
 
 # Run the main function using asyncio
-asyncio.run(main())
+asyncio.run(run())

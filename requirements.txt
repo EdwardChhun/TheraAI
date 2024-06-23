@@ -4,6 +4,7 @@ python-dotenv
 opencv-python
 streamlit
 streamlit-option-menu
+flask
 
 # Voice Recognition
 speechrecognition
