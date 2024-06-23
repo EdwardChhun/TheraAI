@@ -46,6 +46,7 @@ const Account = () => {
       <Navbar toggle={toggle} setToggle={setToggle} />
       <h1>Your Profile</h1>
       <form className="account-form" onSubmit={handleSubmit}>
+      <h3>Personal Details</h3>
         <label>
           Full Name
           <input
@@ -53,15 +54,8 @@ const Account = () => {
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
-          />
-        </label>
-        <label>
-          Email
-          <input
-            type="text"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
+            placeholder="Required"
+            class="resizedTextbox"
           />
         </label>
         <label>
@@ -71,6 +65,19 @@ const Account = () => {
             name="phoneNumber"
             value={formData.phoneNumber}
             onChange={handleChange}
+            placeholder="Required"
+            class="resizedTextbox"
+          />
+        </label>
+        <label>
+          Email
+          <input
+            type="text"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Optional"
+            class="resizedTextbox"
           />
         </label>
         <h3>Emergency Contact</h3>
@@ -81,7 +88,8 @@ const Account = () => {
             name="emergencyContactFullName"
             value={formData.emergencyContactFullName}
             onChange={handleChange}
-            placeholder="Full Name"
+            placeholder="Required"
+            class="resizedTextbox"
           />
         </label>
         <label>
@@ -91,7 +99,8 @@ const Account = () => {
             name="emergencyContactPhoneNumber"
             value={formData.emergencyContactPhoneNumber}
             onChange={handleChange}
-            placeholder="Phone Number"
+            placeholder="Required"
+            class="resizedTextbox"
           />
         </label>
         <label>
@@ -101,7 +110,8 @@ const Account = () => {
             name="emergencyContactEmail"
             value={formData.emergencyContactEmail}
             onChange={handleChange}
-            placeholder="Email"
+            placeholder="Optional"
+            class="resizedTextbox"
           />
         </label>
         <h3>Medical Center</h3>
@@ -112,7 +122,8 @@ const Account = () => {
             name="medicalCenterName"
             value={formData.medicalCenterName}
             onChange={handleChange}
-            placeholder="Center Name"
+            placeholder="Required"
+            class="resizedTextbox"
           />
         </label>
         <label>
@@ -122,7 +133,8 @@ const Account = () => {
             name="medicalCenterAddress"
             value={formData.medicalCenterAddress}
             onChange={handleChange}
-            placeholder="Address"
+            placeholder="Required"
+            class="resizedTextbox"
           />
         </label>
         <button className="sign-up-button" type="submit" onClick={handleSignUpClick}>Sign Up</button>
