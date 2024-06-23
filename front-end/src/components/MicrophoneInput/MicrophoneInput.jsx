@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import "./MicrophoneInput.css"
-// Voice Provider for HUME AI
-import { useVoice } from '@humeai/voice-react';
-
-export const ExampleComponent = () => {
-    const { connect } = useVoice();
-  }
 
 const MicrophoneInput = () => {
   const [isListening, setIsListening] = useState(false);
