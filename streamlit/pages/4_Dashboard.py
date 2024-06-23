@@ -15,7 +15,7 @@ alt.themes.enable("dark")
 
 st.title('Emotion over time (s)')
 
-df = pd.read_csv('./pages/emotion_over_time.csv')
+df = pd.read_csv('./data/emotion_over_time.csv')
 df.insert(3, "Time", np.arange(0, 60, 60/24), True)
 
 st.line_chart(df, x='Time',y='Score',color='Emotion')
