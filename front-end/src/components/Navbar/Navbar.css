@@ -15,7 +15,7 @@
   }
 
   .nav-list {
-    margin-top: 250px;
+    margin-top: 350px;
   }
 
   .sidebar nav ul {
@@ -45,9 +45,9 @@
     bottom: 0;
     background-color: #84D9DF;
     color: black;
-    font-size: medium;
+    font-size: large;
     width: 230px;
-    height: 130px;
+    height: 180px;
     left: 0px;
   }
 
@@ -56,16 +56,14 @@
   }
 
   .logout-button {
-    background-color: #f44336; /* Red background color */
+    position: fixed;
+    background-color: #000000;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    width: 100%; /* Full width button */
+    width: 200px;
     margin-bottom: 10px;
     padding-bottom: 10px;
-  }
-  
-  .logout-button:hover {
-    background-color: #d32f2f; /* Darker red on hover */
+    left: 10px;
   }
