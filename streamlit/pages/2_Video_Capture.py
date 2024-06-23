@@ -63,7 +63,3 @@ if 'stop_camera' not in st.session_state:
 if st.button("Start Webcam", key="start_button"):
     st.session_state['stop_camera'] = False  # Reset the stop state
     start_webcam()
-
-# Button to stop the webcam feed
-if st.button("Stop", key="stop_button"):
-    st.session_state['stop_camera'] = True
