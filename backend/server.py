@@ -7,7 +7,7 @@ import asyncio
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/run-chat-bot', methods=['POST'])
+@app.route('./run-chat-bot', methods=['POST'])
 def run_chat_bot():
     asyncio.run(run())
 

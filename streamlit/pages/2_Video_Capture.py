@@ -11,10 +11,10 @@ import json
 from hume import HumeStreamClient, StreamSocket
 from hume.models.config import FaceConfig
 
-
 load_dotenv()
 
 HUME_API_KEY = os.getenv("HUME_API_KEY")
+
 
 
 async def face_eval():
@@ -114,39 +114,18 @@ def start_webcam():
     cap.release()
 
 # Set up the Streamlit app
-st.title("Live Webcam Feed")
-st.write("This app captures and displays the live feed from your webcam.")
+st.title("Live Webcam + Microphone Feed")
+st.write("Talk to our AI Therapist that evaluates your facial and vocal expression")
 
 # Initialize session state for the stop button
 if 'stop_camera' not in st.session_state:
     st.session_state['stop_camera'] = False
 
-""" 
-NOTE: Include col for start and end
-"""
-col1, col2 = st.columns(2)
-
-    
 # Button to start the webcam feed
-if st.button("Start Webcam", key="start_button"):
+if st.button("Start Chatting", key="start_button"):
     st.session_state['stop_camera'] = False  # Reset the stop state
     asyncio.run(face_eval())
     start_webcam()
-
-    
-if st.button("End Webcame", key="end_button"):
-    st.session_state['stop_camera'] = True  # Reset the stop state
-    start_webcam()
-    
-
-
-
-
-
-
-""" 
-NOTE: Below is the voice recognition with animation, with responses
-"""
 
 # INCLUDE HEREEE!!!!
 # ------------------
