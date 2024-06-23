@@ -23,10 +23,15 @@ while True:
         minSize=(30,30),
         flags=cv2.CASCADE_SCALE_IMAGE
     )
-    
-    for (x,y,width,height) in faces:
-        cv2.rectangle(frame, (x,y), (x+width,y+height), (255, 255, 0), 2)    
-        
+
+    if len(faces) > 0:
+        largest_face = max(faces, key=lambda rect: rect[2] * rect[3])
+
+        # Draw rectangle around the largest face
+        (x, y, w, h) = largest_face
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        cv2.putText(frame, 'Largest Face', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
+
     # This just flips the frame
     frame = cv2.flip(frame, 1)
 

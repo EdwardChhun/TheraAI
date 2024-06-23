@@ -4,7 +4,6 @@ import asyncio
 import json
 
 # Using the camera
-import cv2 
 
 from hume import HumeStreamClient, StreamSocket
 from hume.models.config import FaceConfig
@@ -32,7 +31,8 @@ async def main():
     highest_emotion = max(emotions, key=lambda e: e["score"])
     print("\n")
     print(f"The highest emotion score is {highest_emotion['score']} for the emotion: {highest_emotion['name']}")
-        
+
+
 
 asyncio.run(main())
 

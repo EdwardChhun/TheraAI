@@ -18,9 +18,16 @@ import matplotlib.pyplot as plt
 def start_webcam():
     cascade_path = pathlib.Path(cv2.__file__).parent.absolute() / "data/haarcascade_frontalface_default.xml"
     clf = cv2.CascadeClassifier(str(cascade_path))
+
     
     # Create a VideoCapture object to access the webcam (device 0)
     cap = cv2.VideoCapture(0)
+
+    fps = int(cap.get(cv2.CAP_PROP_FPS))
+    save_interval = fps * 5
+
+    frame_count = 0
+    time = 0
     
     # Check if the webcam is opened correctly
     if not cap.isOpened():
@@ -37,27 +44,40 @@ def start_webcam():
             st.error("Failed to capture frame")
             break
 
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        
+        frame_count += 1
+
         faces = clf.detectMultiScale(
-            gray,
+            frame,
             scaleFactor=1.1,
             minNeighbors=5,
             minSize=(30,30),
             flags=cv2.CASCADE_SCALE_IMAGE
         )
         
-        for (x,y,width,height) in faces:
-            cv2.rectangle(frame, (x,y), (x+width,y+height), (255, 255, 0), 2)    
-            
+        if len(faces) > 0:
+            largest_face = max(faces, key=lambda rect: rect[2] * rect[3])
+
+            # Draw rectangle around the largest face
+            (x, y, w, h) = largest_face
+            cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
+            cv2.putText(frame, 'Largest Face', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
+
         # This just flips the frame
-        frame = cv2.flip(frame, 1)
+        # frame = cv2.flip(frame, 1)
 
         # Convert the frame from BGR to RGB
         frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         
         # Display the frame in Streamlit
         frame_placeholder.image(frame_rgb, channels="RGB")
+
+        if frame_count == save_interval:
+            img = f'img.jpg'
+            cv2.imwrite(img, frame)
+            # send to flask
+
+            frame_count = 0
+            time += 5
 
     # Release the webcam
     cap.release()
