@@ -1,12 +1,16 @@
 python-dotenv
-hume[stream]
-hume[microphone]
+"hume[stream]"
+"hume[microphone]"
 opencv-python
 streamlit
 
 # Voice Recognition
 speechrecognition
 pyaudio
+mediapipe
+pydub
+plotly
+
 
 #run this before below if error
 #! pip install --upgrade setuptools
@@ -15,3 +19,8 @@ pyaudio
 # For some reason if there is an ffmpeg error (windows), include:
 # pip install ffmpeg
 # refer to https://dev.hume.ai/docs/empathic-voice-interface-evi/quickstart/python
+
+# For MAC
+# brew update
+# brew upgrade
+# brew install ffmpeg
