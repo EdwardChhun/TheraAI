@@ -122,6 +122,6 @@ def streamlit_app():
         st.write("Starting Hume EVI streaming...")
         threading.Thread(target=run_asyncio_task).start()
         st.write("Hume EVI streaming started. Speak into your microphone or type messages in the terminal.")
-
+        
 if __name__ == "__main__":
     streamlit_app()
