@@ -109,20 +109,20 @@ st.title("Enhanced Voice Interface with EVI")
 
 
 # CSS for styling the button to make it larger and circular
-st.markdown("""
-    <style>
-    .stButton>button {
-        width: 200px;
-        height: 130px;
-        border-radius: 80%;
-        background-color: #D3D3D3;
-        color: black;
-        font-size: 24px;
-        font-weight: bold;
-        display: flex;
-    }
-    </style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+#     <style>
+#     .stButton>button {
+#         width: 170px;
+#         height: 80px;
+#         border-radius: 20%;
+#         background-color: #D3D3D3;
+#         color: black;
+#         font-size: 24px;
+#         font-weight: bold;
+#         display: flex;
+#     }
+#     </style>
+# """, unsafe_allow_html=True)
 
 # If the button is clicked, start the chatbot
 if st.button("Chat", key="start_button"):
