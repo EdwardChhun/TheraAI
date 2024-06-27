@@ -35,6 +35,11 @@ pip install -r requirements.txt
 
 We created the core functionalities on Python and streaming it on Streamlit (Make sure you have requirements installed)
 
+Check your .env file and make sure you have your own HUME API key and replace it in HUME_API_KEY. Refer to HUME's documentation (https://dev.hume.ai/intro)
+
+```
+HUME_API_KEY = "YOUR_API_KEY"
+```
 ```
 cd streamlit
 streamlit run Home.py 
