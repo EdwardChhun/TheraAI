@@ -1,12 +1,12 @@
 python-dotenv
-hume
+hume==0.7.0
 opencv-python
 streamlit
 flask-cors
 Flask
 numpy
 pandas
-
+sounddevice
 
 # Voice Recognition
 
