@@ -166,7 +166,7 @@ async def main() -> None:
         HUME_API_KEY = os.getenv("HUME_API_KEY")
         HUME_SECRET_KEY = os.getenv("HUME_SECRET_KEY")
         
-        config_id = "867d9570-4d01-4d85-aaa3-b81cbe3798ed" #Elderly Therapist
+        config_id = os.getenv("config_id") #Elderly Therapist
         
         # Connect and authenticate with Hume
         client = HumeVoiceClient(HUME_API_KEY, HUME_SECRET_KEY)
