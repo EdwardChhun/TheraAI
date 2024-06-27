@@ -38,7 +38,9 @@ We created the core functionalities on Python and streaming it on Streamlit (Mak
 Check your .env file and make sure you have your own HUME API key and replace it in HUME_API_KEY. Refer to HUME's documentation (https://dev.hume.ai/intro)
 
 ```
-HUME_API_KEY = "YOUR_API_KEY"
+HUME_API_KEY = "YOUR_OWN_API_KEY"
+HUME_SECRET_KEY = "YOUR_OWN_SECRET_KEY"
+config_id = "YOUR_OWN_CONFIG"
 ```
 ```
 cd streamlit
