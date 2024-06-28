@@ -47,7 +47,7 @@ def start_webcam():
     cap = cv2.VideoCapture(0)
 
     fps = int(cap.get(cv2.CAP_PROP_FPS))
-    save_interval = fps * 5
+    save_interval = fps * 2.5
 
     frame_count = 0
     time = 0
@@ -102,8 +102,8 @@ def start_webcam():
 
         if frame_count == save_interval:
             img = f'img.jpg'
-            asyncio.run(face_eval())
             cv2.imwrite(img, frame)
+            asyncio.run(face_eval())
             # send to flask
 
             frame_count = 0
