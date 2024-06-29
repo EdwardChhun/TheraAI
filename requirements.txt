@@ -7,6 +7,7 @@ Flask
 numpy
 pandas
 sounddevice
+simpleaudio
 
 # Voice Recognition
 
