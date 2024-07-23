@@ -5,6 +5,7 @@ import { Landing, Home, Dashboard, Account, About, Team, } from './components';
 import './App.css';
 
 import WebSocketComponent from "./WebSocketComponent";
+import LiveStreamRecorder from "./LiveStream";
 
 const App = () => {
     const location = useLocation();
@@ -27,6 +28,7 @@ const App = () => {
                         <Route path="/Account" element={<Account />} />
                         <Route path="/About" element={<About />} />
                         <Route path="/Team" element={<Team />} />
+                        <Route path="/test" element={<LiveStreamRecorder />} />
                     </Routes>
                 </CSSTransition>
             </TransitionGroup>
