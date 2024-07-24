@@ -2,13 +2,7 @@ import streamlit as st
 import asyncio
 import os
 from dotenv import load_dotenv
-from helper_functions import print_ascii_art
 from hume import HumeVoiceClient, MicrophoneInterface, VoiceSocket
-
-
-load_dotenv()
-HUME_API_KEY = os.getenv("HUME_API_KEY")
-HUME_SECRET_KEY = os.getenv("HUME_SECRET_KEY")
         
 # Global variable to count messages
 message_counter = 0
@@ -72,7 +66,7 @@ def on_error(error):
 
 # Handler for when the connection is closed
 def on_close():
-    print_ascii_art("Thank you for using EVI, Hume AI's Empathic Voice Interface!")
+    st.write("Thank you for using EVI, Hume AI's Empathic Voice Interface!")
 
 # Asynchronous handler for user input
 async def user_input_handler(socket: VoiceSocket):
@@ -88,10 +82,11 @@ async def user_input_handler(socket: VoiceSocket):
 # Asynchronous main function to set up and run the client
 async def chatbot() -> None:
     try:
-        config_id = os.getenv("config_id")  # Elderly Therapist
-
+        load_dotenv()
+        HUME_API_KEY = os.getenv("HUME_API_KEY")
+        HUME_SECRET_KEY = os.getenv("HUME_SECRET_KEY")
         client = HumeVoiceClient(HUME_API_KEY, HUME_SECRET_KEY)
-
+        config_id = os.getenv("config_id") 
         async with client.connect_with_handlers(
             config_id=config_id,
             on_open=on_open,
