@@ -91,8 +91,8 @@ const LiveStreamRecorder = () => {
       };
 
       // Start recording audio and video
-      audioRef.current.start(2000); // Send audio data every second
-      videoRef.current.start(2000); // Send video data every second
+      audioRef.current.start(500); // Send audio data every second
+      videoRef.current.start(500); // Send video data every second
       setStatus('recording');
 
       // Place holder
