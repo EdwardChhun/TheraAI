@@ -166,6 +166,7 @@ async def main() -> None:
         HUME_API_KEY = os.getenv("HUME_API_KEY")
         HUME_SECRET_KEY = os.getenv("HUME_SECRET_KEY")
         
+        # This might be outdated, replace this with your own config
         config_id = "867d9570-4d01-4d85-aaa3-b81cbe3798ed" #Elderly Therapist
         
         # Connect and authenticate with Hume
