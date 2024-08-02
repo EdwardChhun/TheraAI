@@ -1,6 +1,23 @@
+/*
+  This component handles all logic regarding livestreaming and sending discrete 
+  data packets to HumeAI Websocket.
+  The token variable contains my API key, this is a placeholder. A temporary token
+  generated in the backend and passed to this component as a prop instead.
+  CTRL F all comments that have the words "place holder", they use variables that need
+  to be provided as props.
+
+  See the TheraAI word document for all information regarding the flow and processes used here.
+  I documented my research and algorithm.
+*/
+
+
 import React, { useEffect, useRef, useState } from 'react';
 
 const LiveStreamRecorder = () => {
+
+  // Place holder
+  const token = "ozI6ytVrmfgVr1r4G8evmtveAPyAMVTRxLuJW1MnoACKAwUq"
+
   const [mediaStream, setMediaStream] = useState(null);
   const [status, setStatus] = useState('idle');
   const audioRef = useRef(null);
@@ -55,6 +72,8 @@ const LiveStreamRecorder = () => {
           const blob = event.data;
           // Example: Send the blob to the server using WebSocket
           if (ws.current && ws.current.readyState === WebSocket.OPEN) {
+
+            // remove for production, console.log will slow down performance
             console.log("sending audio...");
             
             const reader = new FileReader();
@@ -94,9 +113,6 @@ const LiveStreamRecorder = () => {
       audioRef.current.start(500); // Send audio data every second
       videoRef.current.start(500); // Send video data every second
       setStatus('recording');
-
-      // Place holder
-      const token = "ozI6ytVrmfgVr1r4G8evmtveAPyAMVTRxLuJW1MnoACKAwUq"
 
       // Open WebSocket connection
       ws.current = new WebSocket(`wss://api.hume.ai/v0/evi/chat?api_key=${token}`);
