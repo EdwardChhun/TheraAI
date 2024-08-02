@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" modified="2024-07-23T21:27:55.959Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="rMn1-22ZwG8PGH9j32ay" version="24.7.3" type="device">
+  <diagram name="Page-1" id="EGWwjK27txE5g54pLaZg">
+    <mxGraphModel dx="1048" dy="612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PMf02m3mK8g0aYuw1LOV-1" target="PMf02m3mK8g0aYuw1LOV-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-1" value="&lt;b&gt;App.js:&lt;/b&gt;&lt;div&gt; program init.&lt;div&gt;Home Screen.&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="449" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="PMf02m3mK8g0aYuw1LOV-2" target="PMf02m3mK8g0aYuw1LOV-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PMf02m3mK8g0aYuw1LOV-2" target="jEGCsXseyQO-cyVBQtN6-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PMf02m3mK8g0aYuw1LOV-2" target="PMf02m3mK8g0aYuw1LOV-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-2" value="&lt;b&gt;Stream and WebSocket:&lt;/b&gt;&lt;div&gt;Initiate WebSocket&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="449" y="270" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PMf02m3mK8g0aYuw1LOV-7" target="PMf02m3mK8g0aYuw1LOV-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-7" value="&lt;b&gt;FetchToken: &lt;/b&gt;Backend request, get temporary token" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="449" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PMf02m3mK8g0aYuw1LOV-10" target="PMf02m3mK8g0aYuw1LOV-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-10" value="Capture Audio" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="165" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-11" value="Capture Video" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-12" value="Capture text input, string format" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="449" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PMf02m3mK8g0aYuw1LOV-13" target="PMf02m3mK8g0aYuw1LOV-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PMf02m3mK8g0aYuw1LOV-13" target="jEGCsXseyQO-cyVBQtN6-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PMf02m3mK8g0aYuw1LOV-13" target="jEGCsXseyQO-cyVBQtN6-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-13" value="Get WebSocket output response" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="730" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-18" value="Display text messages" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PMf02m3mK8g0aYuw1LOV-20" target="PMf02m3mK8g0aYuw1LOV-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-20" value="Data handling" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="165" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="PMf02m3mK8g0aYuw1LOV-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="520" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-25" value="Data handling" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="PMf02m3mK8g0aYuw1LOV-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="509" y="410" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-27" value="Data handling" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="449" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-28" value="Send Data via WebSocket" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="165" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="PMf02m3mK8g0aYuw1LOV-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365" y="610" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-31" value="Send Data via WebSocket" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="305" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="PMf02m3mK8g0aYuw1LOV-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="509" y="500" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PMf02m3mK8g0aYuw1LOV-33" value="Send Data via WebSocket" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="449" y="530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jEGCsXseyQO-cyVBQtN6-2" target="PMf02m3mK8g0aYuw1LOV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jEGCsXseyQO-cyVBQtN6-2" target="PMf02m3mK8g0aYuw1LOV-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jEGCsXseyQO-cyVBQtN6-2" target="jEGCsXseyQO-cyVBQtN6-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-2" value="Stream Video/Audio" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-6" value="Display Video for User" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="25" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-9" value="Play audio response" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="731" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jEGCsXseyQO-cyVBQtN6-10" target="jEGCsXseyQO-cyVBQtN6-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-10" value="Unpack emotion data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="871" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-13" value="Display Graphically" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-14" value="Send Data via WebSocket for informed chat response" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jEGCsXseyQO-cyVBQtN6-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.551;entryY=0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jEGCsXseyQO-cyVBQtN6-10" target="jEGCsXseyQO-cyVBQtN6-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" modified="2024-07-22T23:37:50.578Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="E7yGhFf8a5KI7G96D4C8" version="24.7.3" type="device">
+  <diagram name="Page-1" id="7S7MJ_Q7qmHf8DMQW606">
+    <mxGraphModel dx="1186" dy="475" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-4" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Eu_34WzDMT4KeHl_WXqG-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="42" y="160.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-2" value="Capture Audio in Blob Format" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="-156" y="121" width="151" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-7" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Eu_34WzDMT4KeHl_WXqG-5" target="Eu_34WzDMT4KeHl_WXqG-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-5" value="Create a Blob url that stores the Blob in browser cache" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="43" y="130.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-9" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Eu_34WzDMT4KeHl_WXqG-6" target="Eu_34WzDMT4KeHl_WXqG-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-6" value="Convert the Blob to base64 using the url as reference" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="203" y="130.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-11" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="Eu_34WzDMT4KeHl_WXqG-8" target="Eu_34WzDMT4KeHl_WXqG-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-8" value="Delete blob from browser cache (memory management)" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="372" y="130.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Eu_34WzDMT4KeHl_WXqG-10" value="Send the base64 encoded audio over WebSocket" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="529" y="130.5" width="139" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

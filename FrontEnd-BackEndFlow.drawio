@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" modified="2024-07-23T21:17:45.489Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="NlOA10l-ud458CEj3Oqb" version="24.7.3" type="device">
+  <diagram name="Page-1" id="WxkDtdB9mhiRu2S-x5A9">
+    <mxGraphModel dx="786" dy="459" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-2" value="React Front-End" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="180" width="150" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-7" value="Send get request" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zeQbHcwvESbQHkoAGNXC-2">
+          <mxGeometry x="15" y="45" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-24" value="Receive token, reroute to last page visited" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zeQbHcwvESbQHkoAGNXC-2">
+          <mxGeometry x="10" y="200" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-3" value="Flask Back-End" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="180" width="150" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-8" value="Receive get request.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zeQbHcwvESbQHkoAGNXC-3">
+          <mxGeometry x="10" y="45" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="zeQbHcwvESbQHkoAGNXC-3" source="zeQbHcwvESbQHkoAGNXC-8" target="zeQbHcwvESbQHkoAGNXC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-14" value="Send get request for temporary token using credentials" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zeQbHcwvESbQHkoAGNXC-3">
+          <mxGeometry x="10" y="90" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-20" value="Receive Token" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zeQbHcwvESbQHkoAGNXC-3">
+          <mxGeometry x="10" y="155" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-22" value="Return Token to callback page via get" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zeQbHcwvESbQHkoAGNXC-3">
+          <mxGeometry x="10" y="200" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-6" value="GET &quot;/getToken&quot;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="220" width="115" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-11" value="Hume AI" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="180" width="150" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-12" value="Receive get request.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zeQbHcwvESbQHkoAGNXC-11">
+          <mxGeometry x="10" y="100" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="zeQbHcwvESbQHkoAGNXC-11" source="zeQbHcwvESbQHkoAGNXC-12" target="zeQbHcwvESbQHkoAGNXC-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-18" value="Return Token" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="zeQbHcwvESbQHkoAGNXC-11">
+          <mxGeometry x="10" y="155" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zeQbHcwvESbQHkoAGNXC-7" target="zeQbHcwvESbQHkoAGNXC-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zeQbHcwvESbQHkoAGNXC-14" target="zeQbHcwvESbQHkoAGNXC-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-17" value="GET (use specified)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zeQbHcwvESbQHkoAGNXC-22" target="zeQbHcwvESbQHkoAGNXC-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zeQbHcwvESbQHkoAGNXC-18" target="zeQbHcwvESbQHkoAGNXC-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zeQbHcwvESbQHkoAGNXC-27" value="GET&lt;div style=&quot;line-height: 55%;&quot;&gt;&lt;br&gt;&lt;div&gt;&quot;/callback/token={token}&quot;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="234.5" y="380" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
