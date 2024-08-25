@@ -5,6 +5,8 @@
 
 Therapist AI built using HUME API and other multiple features.
 
+(Mobile rework coming soon...)
+
 
 
 ## Getting Started
